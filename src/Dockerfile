@@ -1,4 +1,4 @@
-FROM node:20.5.1
+FROM node
 
 WORKDIR /app
 COPY package*.json ./
@@ -7,4 +7,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["node" "server.js"]
+CMD ["node", "server.js"]
